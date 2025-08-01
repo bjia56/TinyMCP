@@ -1,6 +1,6 @@
 #pragma once
-// Îª±£Ö¤½ÏºÃµÄ¿çÆ½Ì¨ÌØÐÔ£¬MCPÃüÃû¿Õ¼äµÄ´úÂë¾ùÊ¹ÓÃ±ê×¼c++±àÂë
-// ·Ç±ØÒªÇé¿öÏÂ£¬½ûÖ¹Ê¹ÓÃÌØ¶¨ÏµÍ³Æ½Ì¨API
+// Îªï¿½ï¿½Ö¤ï¿½ÏºÃµÄ¿ï¿½Æ½Ì¨ï¿½ï¿½ï¿½Ô£ï¿½MCPï¿½ï¿½ï¿½ï¿½ï¿½Õ¼ï¿½Ä´ï¿½ï¿½ï¿½ï¿½Ê¹ï¿½Ã±ï¿½×¼c++ï¿½ï¿½ï¿½ï¿½
+// ï¿½Ç±ï¿½Òªï¿½ï¿½ï¿½ï¿½Â£ï¿½ï¿½ï¿½Ö¹Ê¹ï¿½ï¿½ï¿½Ø¶ï¿½ÏµÍ³Æ½Ì¨API
 
 #include <string>
 #include <chrono>
@@ -62,14 +62,14 @@ namespace MCP
 	static constexpr const char* CONST_IMAGE = "image";
 	static constexpr const char* CONST_RESOURCE = "resource";
 
-	static constexpr const char* ERROR_MESSAGE_PARSE_ERROR = u8"parse error";
-	static constexpr const char* ERROR_MESSAGE_INVALID_REQUEST = u8"invalid request";
-	static constexpr const char* ERROR_MESSAGE_METHOD_NOT_FOUND = u8"method not found";
-	static constexpr const char* ERROR_MESSAGE_INVALID_PARAMS = u8"invalid params";
-	static constexpr const char* ERROR_MESSAGE_INTERNAL_ERROR = u8"internal error";
+	static constexpr const char* ERROR_MESSAGE_PARSE_ERROR = "parse error";
+	static constexpr const char* ERROR_MESSAGE_INVALID_REQUEST = "invalid request";
+	static constexpr const char* ERROR_MESSAGE_METHOD_NOT_FOUND = "method not found";
+	static constexpr const char* ERROR_MESSAGE_INVALID_PARAMS = "invalid params";
+	static constexpr const char* ERROR_MESSAGE_INTERNAL_ERROR = "internal error";
 
 
-	// json rpc 2.0±ê×¼´íÎóÂë
+	// json rpc 2.0ï¿½ï¿½×¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	static constexpr const int ERRNO_OK = 0;
 	static constexpr const int ERRNO_PARSE_ERROR = -32700;
 	static constexpr const int ERRNO_INVALID_REQUEST = -32600;
@@ -77,7 +77,7 @@ namespace MCP
 	static constexpr const int ERRNO_INVALID_PARAMS = -32602;
 	static constexpr const int ERRNO_INTERNAL_ERROR = -32603;
 
-	// server×Ô¶¨Òå´íÎóÂë
+	// serverï¿½Ô¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	static constexpr const int ERRNO_SERVER_ERROR_FIRST = -32000;
 	static constexpr const int ERRNO_INVALID_RESPONSE = -32001;
 	static constexpr const int ERRNO_INVALID_NOTIFICATION = -32002;
