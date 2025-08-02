@@ -40,7 +40,7 @@ namespace MCP
 	int CStdioTransport::Write(const std::string& strIn)
 	{
 		const std::lock_guard<std::recursive_mutex> _lock(m_mtxStdout);
-		std::cout << strIn << std::endl;
+		std::cout << strIn << std::flush;
 
 		return ERRNO_OK;
 	}
